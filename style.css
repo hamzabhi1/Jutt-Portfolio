@@ -141,7 +141,10 @@ span{
 footer{
     display: none;
 }
-@media (max-width: 858px){
+@media (max-width: 768px){
+    html{
+        font-size: 55%;
+    }
     .header{
         position: none;
     }
