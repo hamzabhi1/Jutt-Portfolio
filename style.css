@@ -1,0 +1,206 @@
+/* DECUMENT */
+*{Padding: 0; margin: 0; list-style: none; text-decoration: none; box-sizing: border-box;}
+:root{
+    --bg-color: #000000;
+    --snd-bf-color: #212121;
+    --text-color: #fcfcfc;
+    --main-color: #FF0035;
+}
+html{
+    min-height:62.5%;
+    overflow-x: hidden;
+}
+body{
+   background: var(--bg-color);
+   color: var(--text-color);
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 1.5rem;
+    cursor: default;
+    color: var(--main-color);
+    font-weight: 700;
+}
+.nav-bar a{
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 700;
+    margin-left: 2rem;
+}
+.nav-bar a:hover,
+.nav-bar a.active{
+    color: var(--main-color);
+}
+#manu-icon{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    display: none;
+}
+.home{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -8rem;
+}
+.home-content h3{
+    margin-top: 4rem;
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+   font-weight: 700;
+}
+.home-content h4{
+    margin-top: 4rem;
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+   font-weight: 700;
+}
+span{
+    color: var(--main-color);
+}
+.home-content h1{
+    font-size: 5.3rem;
+    font-weight: 700;
+    color: var(--main-color);
+}
+.profile-img img{
+      position: relative;
+      width: 20vw;
+      border-radius: 100%;
+      margin-right: -40px;
+      box-shadow: 0 0 1rem var(--snd-bf-color);
+      animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.1rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.home-content p{
+    font-size: 1.25rem;
+}
+.social-media a{
+    margin-top: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 15px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--text-color);
+    transition: .5s ease;
+}
+.social-media a:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.btn a{
+    display: inline-block;
+    padding: 0.7rem 2rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.btn a:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+    color: var(--bg-color);
+}
+footer{
+    display: none;
+}
+@media (max-width: 858px){
+    .header{
+        position: none;
+    }
+    .home-content h3{
+        font-size: 1.8rem;
+        margin-top: 2rem;
+        margin-bottom: 0.1rem;
+    }
+    .home-content h4{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .home-content h1{
+
+        font-size: 2.5rem;
+        margin-top: 1.5rem;
+    }
+    .profile-img img{
+        margin-right: -1px;
+        width: 30vw;
+       margin-top: -10rem;
+    }
+    .social-media a{
+        font-size: 1rem;
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .btn a{
+        padding: 0.5rem 0.9rem;
+        font-size: 1.2rem;
+        
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .nav-bar a{
+        display: none;
+    }
+    footer{
+        background: #000000;
+        border: 1px solid var(--text-color);
+        height: 50px;
+        width: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        position: fixed;
+        bottom: 0%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        font-size: 0.8rem;
+    }
+    .footer-bar a{
+        padding: 3px;
+        color: var(--text-color);
+    }
+    .footer-bar a:hover,
+    .footer-bar a.active{
+    color: var(--main-color);
+}
+}
