@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* DECUMENT */
+*{Padding: 0; margin: 0; list-style: none; text-decoration: none; box-sizing: border-box;
+      font-family: "Nunito", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
+    }
+:root{
+    --bg-color: #000000;
+    --snd-bf-color: #212121;
+    --text-color: #fcfcfc;
+    --main-color: #FF0035;
+}
+html{
+    min-height:62.5%;
+    overflow-x: hidden;
+}
+body{
+   background: var(--bg-color);
+   color: var(--text-color);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 1.5rem;
+    cursor: default;
+    color: var(--main-color);
+    font-weight: 700;
+}
+.nav-bar a{
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 700;
+    margin-left: 2rem;
+}
+.nav-bar a:hover,
+.nav-bar a.active{
+    color: var(--main-color);
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    padding: 2rem;
+}
+.about-img img{
+    width: 30vw;
+    border: 2px solid var(--main-color);
+    border-radius: 8px;
+    box-shadow: var(--main-color) 0px 5px 15px;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+.about-content{
+    padding: 3rem;
+}
+.about-content h2{
+         font-size: 5.23rem;
+}
+.about-content h3{
+    font-size: 3.1rem;
+}
+.about-content span{
+    color: var(--main-color);
+}
+.about-content p{
+    font-size: 1.2rem;
+}
+.about-content a{
+    background: var(--bg-color);
+    color: var(--main-color);
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+.about-content i{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+footer{
+    display: none;
+}
+@media (max-width: 858px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        position: none;
+    }
+    section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem;
+        margin-top: 8rem;
+    }
+    .nav-bar a{
+        display: none;
+    }
+    footer{
+        background: #000000;
+        border-top: 1px solid var(--text-color);
+        height: 50px;
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        position: fixed;
+        bottom: 0%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        font-size: 1.2rem;
+    }
+    .footer-bar a{
+        padding: 12px;
+        color: var(--text-color);
+    }
+    .footer-bar a:hover,
+    .footer-bar a.active{
+    color: var(--main-color);
+}
+}
