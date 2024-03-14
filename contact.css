@@ -117,9 +117,14 @@ p span{
     .nav-bar a{
         display: none;
     }
+    h2{
+        text-align: center;
+        margin-top: -4rem;
+    }
     section{
         text-align: center;
         margin-top: 10rem;
+        min-height: 100vh;
     }
     section form{
         padding: 0 6rem;
