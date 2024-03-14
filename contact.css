@@ -114,6 +114,10 @@ p span{
     .header{
         position: absolute;
     }
+    body{
+        height: auto;
+        width: 100%;
+    }
     .nav-bar a{
         display: none;
     }
@@ -124,14 +128,13 @@ p span{
     section{
         text-align: center;
         margin-top: 10rem;
-        min-height: 100vh;
     }
     section form{
-        padding: 0 6rem;
-        margin-top: 4rem;
+        padding: 0 2rem;
+        margin-top: 1.2rem;
     }
     section form .btn{
-        margin-top: 3rem;
+        margin-top: 1.2rem;
     }
     section form .btn:hover{
         box-shadow: 0 0 1rem var(--main-color);
@@ -162,5 +165,10 @@ p span{
     .footer-bar a:hover,
     .footer-bar a.active{
     color: var(--main-color);
+}
+p{
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 0%;
 }
 }
