@@ -22,7 +22,7 @@ body{
    color: var(--text-color);
 }
 .header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -50,67 +50,90 @@ body{
 .nav-bar a.active{
     color: var(--main-color);
 }
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h2{
+    text-align: center;
     margin-top: 6rem;
-    padding: 2rem;
 }
-.about-img img{
-    width: 30vw;
-    border: 2px solid var(--main-color);
+h2 span{
+    color: var(--main-color);
+}
+section form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 0 8rem;
+}
+section form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+section form .input-box input,
+section form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    background: var(--snd-bf-color);
+    border: 1px solid var(--main-color);
+    
     border-radius: 8px;
-    box-shadow: var(--main-color) 0px 5px 15px;
-    margin-left: 3rem;
-    margin-top: 3rem;
+    margin: .7rem 0;
 }
-.about-content{
-    padding: 3rem;
+section form textarea{
+    resize: none;
 }
-.about-content h2{
-         font-size: 5.23rem;
+section form .btn:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+    color: var(--bg-color);
 }
-.about-content h3{
-    font-size: 3.1rem;
-}
-.about-content span{
-    color: var(--main-color);
-}
-.about-content p{
-    font-size: 1.2rem;
-}
-.about-content a{
-    background: var(--bg-color);
-    color: var(--main-color);
-    font-size: 3rem;
-    margin-top: 2rem;
-}
-.about-content i{
+section form .btn{
+    margin-top: 4ram;
+    cursor: pointer;
+    background: var(--main-color);
+    border-radius: 15px;
+    padding: 8px 15px;
+    border: none;
     color: var(--text-color);
-    margin-left: 1rem;
-    margin-top: 0.5rem;
 }
 footer{
     display: none;
+}
+p{
+    text-align: center;
+    font-size: 1.25rem;
+}
+p span{
+    color: var(--main-color);
 }
 @media (max-width: 858px){
     html{
         font-size: 55%;
     }
     .header{
-        position: none;
-    }
-    section{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        padding: 2rem;
-        margin-top: 8rem;
+        position: absolute;
     }
     .nav-bar a{
         display: none;
+    }
+    section{
+        text-align: center;
+        margin-top: 10rem;
+    }
+    section form{
+        padding: 0 6rem;
+        margin-top: 4rem;
+    }
+    section form .btn{
+        margin-top: 3rem;
+    }
+    section form .btn:hover{
+        box-shadow: 0 0 1rem var(--main-color);
+        color: var(--bg-color);
+    }
+    section h2{
+        font-size: 1.9rem;
     }
     footer{
         background: #000000;

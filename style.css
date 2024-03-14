@@ -48,7 +48,7 @@ section{
     font-size: 1rem;
     color: var(--text-color);
     font-weight: 700;
-    margin-left: 2rem;
+    margin-left: 4rem;
 }
 .nav-bar a:hover,
 .nav-bar a.active{
@@ -212,7 +212,7 @@ footer{
         font-size: 1.2rem;
     }
     .footer-bar a{
-        padding: 12px;
+        padding: 20px;
         color: var(--text-color);
     }
     .footer-bar a:hover,
